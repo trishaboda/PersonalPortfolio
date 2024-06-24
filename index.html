@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Trisha Boda</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="https://www.linkedin.com/in/trishaboda8905/" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Trisha Boda</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="https://www.linkedin.com/in/trishaboda8905/" target="_blank" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="about">
+        <div class="profile_picture-container">
+            <img src="./assets/trisha.png" alt="profilePic">
+        </div>
+        <div class="profile_description">
+            <p>Hello I'm</p>
+            <h1>Trisha Boda</h1>
+            <!-- <h2>Full Stack Developer | Tech Enthusiast</h2> -->
+            <!-- <p>Passionate about creating web applications and solving problems.</p> -->
+            <p>As Michael Harvey writes, paragraphs are “in essence—a form of punctuation, and like other forms of punctuation they are meant to make written material easy to read.”[1] Effective paragraphs are the fundamental units of academic writing; consequently, the thoughtful, multifaceted arguments that your professors expect depend on them. Without good paragraphs, you simply cannot clearly convey sequential points and their relationships to one another. Many novice writers tend to make a sharp distinction between content and style, thinking that a paper can be strong in one and weak in the other, but focusing on organization shows how content and style converge in deliberative academic writing. Your professors will view even the most elegant prose as rambling and tedious if there isn’t a careful, coherent argument to give the text meaning. Paragraphs are the “stuff ” of academic writing and, thus, worth our attention here.</p>
+            <div class="button-container">
+                <button class="btn btn-color-2" id="linkedin" onclick="window.open('./assets/trishaResume.pdf')">See Resume</button>
+                <!-- <button class="btn btn-color-1" id="github" onclick="location.href = './#contact'">Contact Info</button> -->
+            </div>
+            <div class="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" id="linkedin-icon"/>
+                <img src="./assets/github.png" alt="My GitHub profile" class="icon" id="github-icon"/>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="./assets/python.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/java.png" alt="Java">
+                <p>Java</p>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/html.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/css.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/javascript.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/angular.png" alt="Angular">
+                <p>Angular</p>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/php.png" alt="PHP">
+                <p>PHP</p>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/github.png" alt="Git/GitHub">
+                <p>Git/GitHub</p>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <h1>Experience</h1>
+        <div class="experience-container">
+            <div class="experience-card">
+                <h2>Vice Chairperson</h2>
+                <h3>ACM Symbiosis Institute of Technology</h3>
+                <p>Duration: Jun 2024 - Present</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel urna quis elit dictum hendrerit.</p>
+            </div>
+            <div class="experience-card">
+                <h2>Inter</h2>
+                <h3>Company Name</h3>
+                <p>Duration: Jun 2024 - Jul 2024</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel urna quis elit dictum hendrerit.</p>
+            </div>
+            <!-- Add more experience cards as needed -->
+        </div>
+    </section>
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="./assets/project1.png" alt="Project 1">
+                <h2>Project Title 1</h2>
+                <p>Short description of the project.</p>
+                <a href="#" class="btn btn-color-1">View More</a>
+            </div>
+            <div class="project-card">
+                <img src="./assets/project2.png" alt="Project 2">
+                <h2>Project Title 2</h2>
+                <p>Short description of the project.</p>
+                <a href="#" class="btn btn-color-1">View More</a>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('linkedin-icon').onclick = function() {
+            window.open('https://www.linkedin.com/in/trishaboda8905/', '_blank');
+        }
+    </script>
+    <script>
+        document.getElementById('github-icon').onclick = function() {
+            window.open('https://github.com/trishaboda', '_blank');
+        }
+    </script>
+</html>
